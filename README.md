@@ -1,38 +1,38 @@
 # device_xiaomi_spring-recovery
 
 Recovery tree for this Xiaomi device
-- Xiaomi Redmi _15_ 5G / _15R_ 5G / _POCO M7+_ 5G (codename: `spring`) (August 2025)
+- Xiaomi Redmi _Note 12 5G_ & POCO _X5 5G_ (codename: `sunstone & moonstone`) (August 2025)
 
 ## Device specifications
 
-Device                  | Redmi 15 5G / 15R 5G / POCO M7+ 5G
+Device                  | Redmi Note 12 5G / Note 12R Pro 5G / POCO X5 5G
 :-----------------------|:-------------------------------------
-SoC                     | Qualcomm Snapdragon® 6s Gen 3 (SM6375-AC)
-Board                   | `blair`
+SoC                     | Qualcomm Snapdragon® 695 (SM6375)
+Board                   | `holi/blair`
 CPU                     | Octa-core (2x2.3 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)
 GPU                     | Adreno 619
 Memory                  | 4/6/8/12 GB RAM
-Shipped Android Version | 15.0 (HyperOS 2)
-Storage                 | 128/256/512 GB (UFS 2.2)
+Shipped Android Version | 12.0 (MIUI 13)
+Storage                 | 128/256 (UFS 2.2)
 MicroSD                 | Yes (Hybrid Slot)
 Battery                 | Non-removable Li-Po 7000 mAh
 Dimensions              | 169.5 x 80.5 x 8.4 mm
-Display                 | 6.9" FHD+ IPS LCD, 144Hz, 1080x2460
+Display                 | 6.9" FHD+ Super Amoled Display, 120Hz, 1080x2400
 
 ## Checklist
-- [x] ADB
-- [x] Decryption
-- [x] Touchscreen
-- [x] FastbootD
-- [x] Flashing
-- [x] MTP
-- [x] Sideload
-- [x] Backups
-- [x] Filesystems/Mounts
-- [x] Slot switch
-- [x] Haptics
-- [x] Flashlight
-- [x] Custom splash
+- [n] ADB
+- [n] Decryption
+- [n] Touchscreen
+- [n] FastbootD
+- [n] Flashing
+- [n] MTP
+- [n] Sideload
+- [n] Backups
+- [n] Filesystems/Mounts
+- [n] Slot switch
+- [n] Haptics
+- [n] Flashlight
+- [n] Custom splash
 
 ## Notes
 This device does not have a eSIM, meaning that instead of using Secure Element/StrongBox for decryption, 
@@ -44,9 +44,9 @@ vendor.gatekeeper.is_security_level_spu=0
 ```
 
 ## How to build
-This recovery tree was initially made for `spring`. For historical purposes,
-build the `twrp_spring` target
+This recovery tree was initially made for `stone`. For historical purposes,
+build the `twrp_stone` target
 
 ```shell
-lunch twrp_spring-ap2a-eng && mka adbd recoveryimage
+lunch twrp_stone-ap2a-eng && mka adbd recoveryimage
 ```
