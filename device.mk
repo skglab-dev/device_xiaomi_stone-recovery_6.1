@@ -2,7 +2,7 @@
 # Copyright (C) 2026 chickendrop89
 # SPDX-License-Identifier: GPL-3.0-only
 
-DEVICE_PATH := device/xiaomi/spring
+DEVICE_PATH := device/xiaomi/stone
 
 # Configure Virtual A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression_with_xor.mk)
@@ -17,7 +17,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # OTA device(s)
-TARGET_OTA_ASSERT_DEVICE := spring
+TARGET_OTA_ASSERT_DEVICE := stone
 
 # Boot control, Kernel prebuilts
 PRODUCT_PACKAGES += \
@@ -53,7 +53,7 @@ BOARD_SHIPPING_API_LEVEL := 34
 SHIPPING_API_LEVEL := 34
 
 # Display Size & Density
-TARGET_SCREEN_HEIGHT  := 2340
+TARGET_SCREEN_HEIGHT  := 2400
 TARGET_SCREEN_DENSITY := 450
 TARGET_SCREEN_WIDTH   := 1080
 
@@ -124,7 +124,7 @@ TW_BRIGHTNESS_PATH      := "/sys/class/backlight/panel0-backlight/brightness"
 
 TW_LOAD_VENDOR_MODULES  += "adsp_loader_dlkm.ko qpnp-smb5-main.ko 
 TW_LOAD_VENDOR_MODULES  += leds-qpnp-vibrator-ldo.ko camera.ko
-TW_LOAD_VENDOR_MODULES  += focaltech_spi.ko nt36xxx_spi.ko xiaomi_tp.ko"
+TW_LOAD_VENDOR_MODULES  += focaltech_spi.ko focaltech.ko xiaomi_tp.ko"
 
 TW_EXCLUDE_DEFAULT_USB_INIT   := true
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
