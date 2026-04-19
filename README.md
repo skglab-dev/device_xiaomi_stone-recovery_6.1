@@ -1,4 +1,4 @@
-# device_xiaomi_spring-recovery
+# device_xiaomi_stone-recovery
 
 Recovery tree for this Xiaomi device
 - Xiaomi Redmi _Note 12 5G_ & POCO _X5 5G_ (codename: `sunstone & moonstone`) (August 2025)
