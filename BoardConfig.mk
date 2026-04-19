@@ -2,7 +2,7 @@
 # Copyright (C) 2026 chickendrop89
 # SPDX-License-Identifier: GPL-3.0-only
 
-DEVICE_PATH := device/xiaomi/spring
+DEVICE_PATH := device/xiaomi/stone
 
 # Architecture
 TARGET_ARCH                := arm64
