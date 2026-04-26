@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),spring)
+ifeq ($(TARGET_DEVICE),moonstone, sunstone, stone)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
