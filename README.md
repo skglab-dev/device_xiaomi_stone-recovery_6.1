@@ -11,11 +11,11 @@ SoC                     | Qualcomm Snapdragon® 695 (SM6375)
 Board                   | `holi/blair`
 CPU                     | Octa-core (2x2.3 GHz Cortex-A78 & 6x2.0 GHz Cortex-A55)
 GPU                     | Adreno 619
-Memory                  | 4/6/8/12 GB RAM
+Memory                  | 4/6/8 GB RAM
 Shipped Android Version | 12.0 (MIUI 13)
 Storage                 | 128/256 (UFS 2.2)
 MicroSD                 | Yes (Hybrid Slot)
-Battery                 | Non-removable Li-Po 7000 mAh
+Battery                 | Non-removable Li-Po 5000 mAh
 Dimensions              | 169.5 x 80.5 x 8.4 mm
 Display                 | 6.9" FHD+ Super Amoled Display, 120Hz, 1080x2400
 
