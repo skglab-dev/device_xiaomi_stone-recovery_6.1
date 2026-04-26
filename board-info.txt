@@ -1,1 +1,1 @@
-require board=spring|blair
+require board=stone|moonstone|sunstone|holi|blair
