@@ -34,13 +34,10 @@ BOARD_MKBOOTIMG_ARGS          += --pagesize $(BOARD_KERNEL_PAGESIZE)
 # BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 # BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 
-#A/B
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
-AB_OTA_UPDATER := true
-
 # VA/B with recovery partition. Leave this blank as Google recommends
 BOARD_USES_RECOVERY_AS_BOOT := true
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT :=
+AB_OTA_UPDATER := true
 
 # Use LZ4 Ramdisk compression instead of GZIP
 BOARD_RAMDISK_USE_LZ4 := true
